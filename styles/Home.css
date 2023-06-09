@@ -1,1 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Background Animation Start */
+body {
+    background: linear-gradient(purple, #5090C8, #151411);
+    animation: spinning 20s ease infinite;
+    background-size: 200% 200%;
+    background-attachment: fixed;
+    font-family: 'Bruno Ace', cursive;
+}
+
+@keyframes spinning {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Background Animation End */
+#logo {
+    display: inline-block;
+    width: 8%;
+}
+
+/* Navigation Bar Start */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 30%;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  #hover a:hover {
+    background-image: linear-gradient(white, black);
+    font-family: 'Bruno Ace', cursive;
+    font-weight: bolder;
+    color: yellow;
+  }
+
+  #hover {
+    margin-top: 20%;
+  }
+  #top {
+    display: flex;
+    position: absolute;
+    top: 0;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .closebtn:hover {
+        color: yellow;
+  }
+  #logo {
+    width: 30%;
+  }
+  #logo:hover{
+    background-image: linear-gradient(white, black);
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* Navigation Bar End */
+/* Footer Start */
+footer {
+    background-color: orange;
+    padding: 20%;
+}
+/* Footer End */
+/* Card Sta */
